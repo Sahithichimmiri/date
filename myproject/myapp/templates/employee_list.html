@@ -1,0 +1,10 @@
+
+    <h2>Employee List</h2>
+        {% for employee in employees %}
+            employee.start_date={{ employee.start_date }}
+            employee.end_date={{ employee.end_date }}
+            leapyear_count={{ employee.leapyear_count }}
+            non_leapyear_count={{ employee.non_leapyear_count }}
+            <br>
+        {% endfor %}
+    <a href="{% url 'insert_employee' %}">Add New Employee</a>
